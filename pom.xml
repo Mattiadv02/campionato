@@ -54,7 +54,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <suppressionsLocation>checkstyle-suppression.xml</suppressionsLocation>
+                    <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                     <failOnViolation>true</failOnViolation>
                 </configuration>
             </plugin>

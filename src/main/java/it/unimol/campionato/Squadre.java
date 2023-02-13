@@ -19,32 +19,30 @@ public class Squadre {
         this.abbreviazione = abbreviazione;
         this.imgUrl = imgUrl;
     }
-    public Integer getId(){
+    public Integer getId() {
         return id;
     }
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
-    public String getAbbreviazione(){
+    public String getAbbreviazione() {
         return abbreviazione;
     }
-    public String getImgUrl(){
+    public String getImgUrl() {
         return imgUrl;
     }
 
 
-    public void setId (Integer id){
+    public void setId(Integer id) {
         this.id = id;
     }
-    public void setNome (String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
-    public void setAbbreviazione (String abbreviazione){
+    public void setAbbreviazione(String abbreviazione) {
         this.abbreviazione = abbreviazione;
     }
-    public void setImgUrl (String imgUrl){
+    public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
 }
-
-
