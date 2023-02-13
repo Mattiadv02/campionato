@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-
 public class PartiteService {
     private SquadreRepository squadreRepository;
 
@@ -30,10 +29,6 @@ public class PartiteService {
         squadre.add(new Squadre(4, "Inter", "INT", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/2048px-FC_Internazionale_Milano_2021.svg.png"));
 
 
-        for (Squadre a : squadre) {
-            Squadre squadra = new Squadre(a.getId(), a.getNome(), a.getAbbreviazione(), a.getImgUrl());
-
-            this.squadreRepository.save(squadra);
-        }
+        this.squadreRepository.saveAll(squadre);
     }
 }

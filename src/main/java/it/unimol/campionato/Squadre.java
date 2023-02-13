@@ -1,12 +1,10 @@
 package it.unimol.campionato;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 @Entity
-
 public class Squadre {
-    @Id @GeneratedValue
+    @Id
     private Integer id;
     private String nome;
     private String abbreviazione;
@@ -31,8 +29,6 @@ public class Squadre {
     public String getImgUrl() {
         return imgUrl;
     }
-
-
     public void setId(Integer id) {
         this.id = id;
     }

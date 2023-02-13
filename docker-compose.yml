@@ -11,7 +11,6 @@ services:
       - POSTGRES_USER=mattia
       - POSTGRES_DB=campionato_db
       - POSTGRES_PASSWORD=password
-
   campionato:
     container_name: campionato
     build: ./
