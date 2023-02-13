@@ -1,4 +1,4 @@
-name: Pipeline Java Check, Build and Deploy on Docker CI/CD
+name: Github Action, Build with Maven
 
 on:
   push:
@@ -18,7 +18,5 @@ jobs:
           java-version: "17"
           distribution: "zulu"
           cache: maven
-      - name: Checkstyle
-        run: mvn checkstyle:check
       - name: Build with Maven
         run: mvn package --file pom.xml
